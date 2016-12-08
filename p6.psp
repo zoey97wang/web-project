@@ -1,0 +1,19 @@
+<%@ page language="PL/SQL" %>
+<%@ plsql procedure="p6" %>
+<%@ plsql parameter="p_name" type="VARCHAR2" %> <%@ plsql parameter="p_email" type="VARCHAR2" %>
+<%@ plsql
+parameter="p_pnumber" type="VARCHAR2" %><%@ plsql parameter="gender" type="VARCHAR2" %>
+ <%@ plsql
+ parameter="p_comments" type="VARCHAR2" %>
+<%/* Insert the values into the database table */
+INSERT INTO guestbook (name,email,comments,creation_date,phonenumber,gender)
+VALUES (p_name,p_email,p_comments,SYSDATE,p_pnumber,gender);
+  /* Commit the Transaction */
+    COMMIT;
+    %>
+DATA INSERTED
+<br>
+Verify By Calling p4 in the URL window. <br>
+Or just click below:
+<p>
+<a href="homework4db">homework4db</a>

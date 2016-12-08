@@ -1,0 +1,51 @@
+<%@ page language="PL/SQL" %>
+<%@ plsql procedure="homework4" %>
+<HTML>
+<HEAD>
+<TITLE>PSP Sample - GuestBook</TITLE> </HEAD>
+<BODY>
+<CENTER>
+<BR>
+<FORM METHOD=POST ACTION="p6">
+   <TABLE BORDER=0>
+   <TR><TH BGCOLOR="#254117"><FONT SIZE=3 COLOR="RED"> CS 632 Homework of Zhe WANG </TH></TR>
+   <TR><TD><TABLE BORDER=0 CELLPADDING=4>
+   <TR><TD ALIGN=RIGHT><b>Name:</b></TD>
+   <TD ALIGN=LEFT><INPUT TYPE=TEXT SIZE=24 MAXLENGTH=50
+   NAME="p_name"></TD>
+                 </TR>
+                 <TR><TD ALIGN=RIGHT><b>E-mail:</b></TD>
+                 <TD ALIGN=LEFT><INPUT TYPE=TEXT SIZE=40 MAXLENGTH=100
+                 NAME="p_email"></TD>
+                               </TR>
+                 <TR><TD ALIGN=RIGHT><b>Phone Number:</b></TD>
+                                  <TD ALIGN=LEFT><INPUT TYPE=TEXT SIZE=40 MAXLENGTH=100
+                                                   NAME="p_pnumber"></TD>
+
+                                        </TR>
+                <tr><TD ALIGN=RIGHT><b>Gender:</b><td>
+                <SELECT name = gender>
+                <option>MALE</option>
+                <option>FEMALE</option>
+                <option>DO NOT WANT TO SAY</option></tr>
+                                          </TABLE>
+                                          <b> Comments :</b><br>
+                                          <TEXTAREA NAME="p_comments" ROWS=10 COLS=72 SIZE=2000 WRAP=HARD>
+                                                     </TEXTAREA>
+                                                                <BR>
+                                                                           <CENTER>
+                                                                           <BR>
+                                                                           <!-- <INPUT TYPE=SUBMIT VALUE="Submit
+                                                                           Comments" > --> <INPUT TYPE=BUTTON
+                                                                           VALUE="Submit Comments"
+                                                                           onClick="document.forms[0].submit();">
+                                                                           <INPUT TYPE=RESET VALUE="Reset
+                                                                           Form"><br>
+                                                                                      </CENTER>
+                                                                                              </TD>
+                                                                                                   </TR>
+                                                                                                      </TABLE>
+                                                                                                      </FORM>
+                                                                                                      </CENTER>
+                                                                                                      </BODY>
+                                                                                                      </HTML>
